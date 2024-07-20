@@ -1,0 +1,45 @@
+@media screen and (min-width: 576px) {
+    #sidebar {
+        width: 300px;
+
+    }
+
+    #top-content {
+        width: calc(100vw - 300px);
+    }
+
+    .sidebar-il,
+    .playlist {
+        display: inline;
+    }
+
+    .separator,
+    .logo-big {
+        display: block;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .sidebar-main ul,
+    .sidebar-user {
+        align-items: flex-start;
+    }
+
+    #sidebar li {
+        padding-left: 25px;
+    }
+
+    #sidebar .logo,
+    .sidebar-user a,
+    #sidebar h3,
+    #sidebar i,
+    .separator {
+        margin-left: 25px;
+    }
+
+    .sidebar-main>ul .home {
+        border-left: 3px solid greenyellow;
+    }
+}
