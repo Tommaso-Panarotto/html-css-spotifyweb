@@ -10,4 +10,15 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+main {
+    height: calc(100vh - 80px);
+    background-color: aqua;
+    overflow: auto;
+}
+
+footer {
+    min-height: 80px;
+    background-color: #282828;
+}
+
 /* Utils */
