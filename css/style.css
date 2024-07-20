@@ -18,30 +18,98 @@ main {
 footer {
     min-height: 80px;
     background-color: #282828;
+    z-index: 1;
+    position: sticky;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #7D7F84;
 }
 
 /* Utils */
 
+/*Margin*/
+.mrb-15 {
+    margin-bottom: 15px;
+}
 
-
+/*Padding*/
+.pdb-15 {
+    padding-bottom: 15px;
+}
 
 /*Main*/
-#navbar {
-    width: 60px;
+#sidebar {
+    width: 70px;
     height: calc(100vh - 80px);
-    background-color: red;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 auto;
 }
 
 #top-content {
     height: calc(100vh - 80px);
-    width: 100%;
+    width: calc(100vw - 70px);
     background-color: #141922;
     overflow: auto;
     color: white;
+    position: relative;
 }
 
 .upgrade {
     min-height: 80px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/*Sidebar*/
+.sidebar {
+    height: calc((100vh - 80px) - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar li {
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.sidebar-il {
+    display: none;
+}
+
+.sidebar img {
+    filter: invert(0.3);
+    width: 35px;
+}
+
+.sidebar-user img {
+    margin: 20px auto 0 auto;
+}
+
+.sidebar-user .download-app {
+    width: 60%;
+}
+
+.sidebar-user .user {
+    filter: invert(0);
+    background-color: #808080;
+    border-radius: 50%;
+    margin-bottom: 40px;
 }
