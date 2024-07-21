@@ -200,26 +200,30 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px
 }
 
 .col {
     flex-basis: calc(50% - 5px);
+    max-width: 300px;
     text-align: center;
+    cursor: pointer;
 }
 
 .col>* {
     margin: 10px 0;
 }
 
-.col span {
+.col span,
+.JD-mix>.span,
+.popular-artist>.span {
     color: #7D7F84;
     font-size: 13px;
 }
 
-
-
-
+.popular-artist .card>img {
+    border-radius: 50%;
+}
 
 /*border to remove*/
 .border {
