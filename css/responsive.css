@@ -1,11 +1,12 @@
+/*small 576*/
 @media screen and (min-width: 576px) {
     #sidebar {
-        width: 300px;
+        width: 270px;
 
     }
 
     #top-content {
-        width: calc(100vw - 300px);
+        width: calc(100vw - 270px);
     }
 
     .sidebar-il,
@@ -41,5 +42,19 @@
 
     .sidebar-main>ul .home {
         border-left: 3px solid greenyellow;
+    }
+}
+
+/*medium 768*/
+@media screen and (min-width: 768px) {
+    .col {
+        flex-basis: calc(25% - 30px / 4);
+    }
+}
+
+/*Large 996*/
+@media screen and (min-width: 996px) {
+    .col {
+        flex-basis: calc(100% / 6 - 50px / 6);
     }
 }
