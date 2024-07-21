@@ -74,6 +74,10 @@ a {
     position: sticky;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 
 /*Sidebar*/
@@ -159,5 +163,13 @@ a {
 
 .sidebar-user .name-user,
 .playlist h3 {
+    color: white;
+}
+
+/*Upgrade*/
+.upgrade a {
+    padding: 10px 35px;
+    border: 2px solid white;
+    border-radius: 20px;
     color: white;
 }
