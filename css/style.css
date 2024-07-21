@@ -16,12 +16,7 @@ main {
     flex-direction: row;
 }
 
-footer {
-    min-height: 80px;
-    background-color: #282828;
-    z-index: 1;
-    position: sticky;
-}
+
 
 h3 {
     font-size: 16px;
@@ -51,6 +46,11 @@ a {
     width: 250px;
 }
 
+/*color*/
+.grey {
+    color: #7D7F84;
+}
+
 /*Margin*/
 .mrb-15 {
     margin-bottom: 15px;
@@ -72,7 +72,7 @@ a {
 /*Main*/
 #top-content {
     width: calc(100vw - 60px);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 150px);
     background-color: #141922;
     overflow: auto;
     color: white;
@@ -93,7 +93,7 @@ a {
 /*Sidebar*/
 #sidebar {
     width: 60px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 150px);
     background-color: black;
     color: #7D7F84;
     display: flex;
@@ -207,6 +207,9 @@ a {
     flex-basis: calc(50% - 5px);
     max-width: 300px;
     text-align: center;
+}
+
+.card img {
     cursor: pointer;
 }
 
@@ -228,4 +231,106 @@ a {
 /*border to remove*/
 .border {
     border: 1px dashed white;
+}
+
+footer {
+    min-height: 150px;
+    background-color: #282828;
+    z-index: 1;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.comand {
+    flex-grow: 1;
+}
+
+footer .music,
+footer .sets {
+    flex-basis: calc(100% / 3);
+    display: flex;
+}
+
+.now-music img {
+    width: 60px;
+    margin: 0 15px;
+}
+
+.dscrp-music,
+.like {
+    margin: auto 0;
+}
+
+.music i {
+    font-size: 20px;
+}
+
+.comand {
+    text-align: center;
+}
+
+.comand a {
+    margin: 0 15px;
+    color: white;
+    vertical-align: middle;
+}
+
+.fa-circle-play {
+    font-size: 25px;
+}
+
+.time-music {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.bar-music {
+    display: flex;
+    flex-basis: 600px;
+    height: 7px;
+    background-color: #5A5A5A;
+    border-radius: 5px;
+}
+
+.progress-music {
+    flex-basis: 20%;
+    height: 7px;
+    background-color: #C1C1C1;
+    border-radius: 5px;
+}
+
+.sets {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.sets a {
+    color: white;
+    margin: 0 10px;
+}
+
+.bar-volume {
+    display: flex;
+    flex-basis: 150px;
+    height: 7px;
+    background-color: #5A5A5A;
+    border-radius: 5px;
+}
+
+.actual-volume {
+    flex-basis: 20%;
+    height: 7px;
+    background-color: #C1C1C1;
+    border-radius: 5px;
 }
