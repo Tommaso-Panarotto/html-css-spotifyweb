@@ -101,10 +101,6 @@ a {
     justify-content: space-between;
 }
 
-.sidebar-main {
-    overflow-y: auto;
-}
-
 #sidebar img {
     filter: invert(0.3);
 }
