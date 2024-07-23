@@ -40,15 +40,20 @@
         margin-left: 25px;
     }
 
-    .sidebar-main>ul .home {
-        border-left: 3px solid greenyellow;
+    #sidebar li.home {
+        border-left: 2px solid #adff2f;
     }
 }
 
 /*medium 768*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 857px) {
     .col {
         flex-basis: calc(25% - 30px / 4);
+    }
+
+    footer .music,
+    footer .sets {
+        display: flex;
     }
 }
 

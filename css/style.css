@@ -11,13 +11,6 @@ body {
     font-weight: bold;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
 h3 {
     font-size: 16px;
 }
@@ -43,7 +36,7 @@ a {
 /* Utils */
 .separator {
     border: 1px solid #7D7F84;
-    width: 250px;
+    width: 225px;
 }
 
 /*color*/
@@ -70,9 +63,16 @@ a {
 }
 
 /*Main*/
+.upper-content {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: row;
+    background-color: greenyellow;
+}
+
 #top-content {
-    width: calc(100vw - 60px);
-    height: calc(100vh - 150px);
+    flex-grow: 1;
     background-color: #141922;
     overflow: auto;
     color: white;
@@ -88,17 +88,21 @@ a {
     align-items: center;
     justify-content: flex-end;
     padding-right: 20px;
+    z-index: 1;
 }
 
 /*Sidebar*/
 #sidebar {
     width: 60px;
-    height: calc(100vh - 150px);
     background-color: black;
     color: #7D7F84;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.sidebar-main {
+    overflow-y: auto;
 }
 
 #sidebar img {
@@ -175,6 +179,8 @@ a {
     color: white;
 }
 
+
+
 /*Upgrade*/
 .upgrade a {
     padding: 10px 30px;
@@ -234,12 +240,8 @@ a {
 }
 
 footer {
-    min-height: 150px;
+    min-height: 100px;
     background-color: #282828;
-    z-index: 1;
-    position: sticky;
-    bottom: 0;
-    left: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -308,8 +310,6 @@ footer .sets {
 }
 
 .sets {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
@@ -333,4 +333,58 @@ footer .sets {
     height: 7px;
     background-color: #C1C1C1;
     border-radius: 5px;
+}
+
+footer .music,
+footer .sets {
+    display: none;
+}
+
+/*Bonus*/
+
+.hover-word:hover,
+.name-playlist li:hover {
+    color: white;
+}
+
+.bgwhite-hover:hover {
+    background-color: white;
+}
+
+.card {
+    position: relative;
+}
+
+.player-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.col .card:hover .player-button {
+    display: flex;
+}
+
+.popular-artist .card:hover .player-button {
+    display: flex;
+    border-radius: 50%;
+}
+
+.upgrade a:hover {
+    transform: scale(1.1);
+}
+
+.album .navbar li.active::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: #adff2f;
+    margin: 3px auto;
 }
