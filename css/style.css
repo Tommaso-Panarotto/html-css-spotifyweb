@@ -307,6 +307,9 @@ footer .sets {
     height: 7px;
     background-color: #C1C1C1;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .sets {
@@ -387,4 +390,20 @@ footer .sets {
     height: 2px;
     background-color: #adff2f;
     margin: 3px auto;
+}
+
+.progress-music .bar-circle {
+    padding: 8px;
+    background-color: white;
+    margin: 0;
+    border-radius: 50%;
+    display: none;
+}
+
+.bar-music:hover .progress-music {
+    background-color: #adff2f;
+}
+
+.bar-music:hover .bar-circle {
+    display: block;
 }
